@@ -293,10 +293,12 @@ export default {
     } else {
       this.optionsMain2.autoplay = true
     }
-    this.asNavFor2_1.push(this.$refs.thumbnails2)
-    this.asNavFor2_2.push(this.$refs.main2)
-    this.asNavFor3_1.push(this.$refs.thumbnails3)
-    this.asNavFor3_2.push(this.$refs.main3)
+    setTimeout(() => {
+      this.asNavFor2_1.push(this.$refs.thumbnails2)
+      this.asNavFor2_2.push(this.$refs.main2)
+      this.asNavFor3_1.push(this.$refs.thumbnails3)
+      this.asNavFor3_2.push(this.$refs.main3)
+    })
     window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroy () {

@@ -20,7 +20,7 @@ export default {
   }),
   mounted () {
     const rand = Math.random()
-    const host = 'https://raw.githubusercontent.com/chumakov-azoft/insta-patterns/master/public/'
+    const host = 'https://raw.githubusercontent.com/natalyon/insta-patterns/master/public/'
     Promise.all([
       axios.get(host + 'market.json?v=' + rand),
       axios.get(host + 'shmarket.json?v=' + rand),
