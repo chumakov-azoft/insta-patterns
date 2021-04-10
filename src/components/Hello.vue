@@ -1,17 +1,6 @@
 <template>
   <div>
     <div class="block-avatar"><div class="block-item "><div></div> <a href="#"><div><img width="65" src="//s.taplink.cc/a/c/9/d/8/2929eb.jpg?2" alt="natalyonpattern" style="border-radius: 50%;"></div></a> <div><i style="padding-right: 0px !important; visibility: hidden;"></i></div></div> <div class="color: #777777 !important;">@natalyonpattern</div></div>
-    <div v-if="isRu">
-      <h1 id="title1">Buy fabrics with my prints on <a href="https://marketshmarket.com/collection/all?characteristics[]=85386478">Shmarket</a></h1>
-      <agile class="main" ref="main1" :options="optionsMain1" :as-nav-for="asNavFor1_1">
-        <div class="slide" v-for="(slide, index) in slides1_big" :key="index" :class="`slide--${index}`" @click="goUrl(hrefs1[index])"><img :src="slide"/></div>
-      </agile>
-      <agile class="thumbnails" ref="thumbnails1" :options="optionsThumb1" :as-nav-for="asNavFor1_2">
-        <div class="slide slide--thumbniail" v-for="(slide, index) in slides1_small" :key="index" :class="`slide--${index}`" @click="$refs.thumbnails1.goTo(index)"><img :src="slide"/></div>
-        <template slot="prevButton"><i class="fas fa-chevron-left"></i></template>
-        <template slot="nextButton"><i class="fas fa-chevron-right"></i></template>
-      </agile>
-    </div>
     <h1 id="title2">Buy my designs on <a href="https://www.redbubble.com/people/natalyon/shop">Redbubble</a></h1>
     <agile class="main" ref="main2" :options="optionsMain2" :as-nav-for="asNavFor2_1">
       <div class="slide" v-for="(slide, index) in slides2_big" :key="index" :class="`slide--${index}`" @click="goUrl(hrefs2[index])"><img :src="slide"/></div>
@@ -27,6 +16,15 @@
     </agile>
     <agile class="thumbnails" ref="thumbnails3" :options="optionsThumb3" :as-nav-for="asNavFor3_2">
       <div class="slide slide--thumbniail" v-for="(slide, index) in slides3_small" :key="index" :class="`slide--${index}`" @click="$refs.thumbnails3.goTo(index)"><img :src="slide"/></div>
+      <template slot="prevButton"><i class="fas fa-chevron-left"></i></template>
+      <template slot="nextButton"><i class="fas fa-chevron-right"></i></template>
+    </agile>
+    <h1 id="title1">Buy fabrics with my prints on <a href="https://marketshmarket.com/collection/all?characteristics[]=85386478">Shmarket</a></h1>
+    <agile class="main" ref="main1" :options="optionsMain1" :as-nav-for="asNavFor1_1">
+      <div class="slide" v-for="(slide, index) in slides1_big" :key="index" :class="`slide--${index}`" @click="goUrl(hrefs1[index])"><img :src="slide"/></div>
+    </agile>
+    <agile class="thumbnails" ref="thumbnails1" :options="optionsThumb1" :as-nav-for="asNavFor1_2">
+      <div class="slide slide--thumbniail" v-for="(slide, index) in slides1_small" :key="index" :class="`slide--${index}`" @click="$refs.thumbnails1.goTo(index)"><img :src="slide"/></div>
       <template slot="prevButton"><i class="fas fa-chevron-left"></i></template>
       <template slot="nextButton"><i class="fas fa-chevron-right"></i></template>
     </agile>
